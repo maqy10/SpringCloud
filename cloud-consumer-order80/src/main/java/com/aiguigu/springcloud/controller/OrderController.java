@@ -13,7 +13,10 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+//    public static final String PAYMENT_URL = "http://localhost:8001";  //单机版
+
+    //集群版写服务名,需要配置默认负载均衡机制,使用restTemplate调用，restTemplate不知道调用哪个，添加负载均衡，在配置类中
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Autowired
     private RestTemplate restTemplate;
