@@ -21,6 +21,7 @@ public class OrderController {
     @GetMapping("/consumer/payment/create")
     public CommonResult<Payment> create(Payment payment){
         log.info("--------------------客户端调用create");
+        // restTemplate发送的请求为json格式，因为在其调用的接口接收请求参数应加@RequestBody注解
         return restTemplate.postForObject(PAYMENT_URL+"/payment/create",payment,CommonResult.class);
     }
 
