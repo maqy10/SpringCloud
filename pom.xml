@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.atguigu.springcloud</groupId>
+    <groupId>com.atguigu.springcloud</groupId>
     <artifactId>cloud2020</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -12,6 +12,7 @@
         <module>cloud-consumer-order80</module>
         <module>cloud-consumer-order80</module>
         <module>cloud-api-commons</module>
+        <module>cloud-eureka-server-7001</module>
     </modules>
     <packaging>pom</packaging>
 
