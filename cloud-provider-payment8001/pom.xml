@@ -12,6 +12,14 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
     <dependencies>
+
+        <!-- 引入公共的实体类，工具类 若导入不了，等一会儿，或将其再打包一次试一下,再不行，百度 -->
+        <dependency>
+            <groupId>org.atguigu.springcloud</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- 一般web 会和actuator在一起使用 ，actuator对图形化处理很重要-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

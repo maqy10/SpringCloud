@@ -1,7 +1,7 @@
 package com.aiguigu.springcloud.controller;
 
-import com.aiguigu.springcloud.entity.CommonResult;
-import com.aiguigu.springcloud.entity.Payment;
+import com.atguigu.springcloud.entity.CommonResult;
+import com.atguigu.springcloud.entity.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
