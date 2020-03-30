@@ -1,0 +1,11 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order #入驻进eureka服务的注册名称
+    #注册到zookeeper
+  cloud:
+    zookeeper:
+      connect-string: 192.168.10.11:2181
+
