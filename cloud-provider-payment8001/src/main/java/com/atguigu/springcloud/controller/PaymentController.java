@@ -46,6 +46,7 @@ public class PaymentController {
         }
     }
 
+    // 获取服务信息
     @GetMapping("/payment/discovery")
     public Object discovery(){
         //获取服务清单列表
@@ -57,6 +58,8 @@ public class PaymentController {
         //获取该服务下的全部具体实例
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
         for (ServiceInstance instance : instances) {
+            // serviceId ：服务名
+            // CLOUD-PAYMENT-SERVICE	192.168.72.55	http://192.168.72.55:8001
             log.info(instance.getServiceId()+"\t"+instance.getHost()+"\t"+instance.getUri());
         }
 

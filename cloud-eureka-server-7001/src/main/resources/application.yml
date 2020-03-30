@@ -11,3 +11,6 @@ eureka:
     service-url:
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址.
       defaultZone: http://eureka7002.com:7002/eureka/
+  server:
+    enable-self-preservation: false  #测试时关闭，真正部署时开启  Eureka自我保护机制
+      eviction-interval-timer-in-ms: 2000 #设置默认发送心跳时间 ,单位ms

@@ -9,3 +9,6 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/  #集群互相注册， 相互守望 ，defaultZone,设置为本机外其他eurekaServer地址
+  server:
+    enable-self-preservation: false #Eureka自我保护机制，默认开启，测试时关闭，部时开启
+    eviction-interval-timer-in-ms: 2000 #设置默认发送心跳时间 ,单位ms
