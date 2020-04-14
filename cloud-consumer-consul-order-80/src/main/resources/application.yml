@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: consul-cloud-consumer-order
+  ### consul 注册中心地址
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+       # register-health-check: true #健康检查，保证服务处于启动状态，建议开启
+        #设置不需要注册到 consul 中 (如果没有对外的服务，可以不注册到consul中,缺省为true)
+#        spring.cloud.consul.discovery.register=false
+
