@@ -43,6 +43,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 此处eureka做了与Ribbon的整合 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
