@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 // 不使用默认轮询，使用自定义负载均衡算法
-@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MyselfRule.class)
+//@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MyselfRule.class)
 @EnableEurekaClient
 @SpringBootApplication
 public class OrderMain80 {
