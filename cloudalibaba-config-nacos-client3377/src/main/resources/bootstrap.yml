@@ -1,0 +1,23 @@
+#nacos配置
+
+server:
+  port: 3377
+
+spring:
+  application:
+    name: nacos-config-client
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml #指定yaml格式的配置
+#        group: TEST_GROUP
+        namespace: 405e190b-c0d3-4b9d-a0da-b46ea2a83608
+
+
+  #配置规则DataId
+#${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+# 获取文件 nacos-config-client-dev.yaml 旧版本写 .yaml  新版本适配了yml ,两者都可？
