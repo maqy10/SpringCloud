@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba;
+package com.atguigu.springcloud.alibaba.controller;
 
 
 import com.atguigu.springcloud.alibaba.domain.CommonResult;
